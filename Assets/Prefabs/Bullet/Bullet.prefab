@@ -79,7 +79,7 @@ LineRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 1
+        value: 0.7571449
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -137,7 +137,6 @@ GameObject:
   - component: {fileID: 8872618095617169635}
   - component: {fileID: 7009502587473575835}
   - component: {fileID: 6315748736491972564}
-  - component: {fileID: 3324743930543556933}
   m_Layer: 11
   m_Name: Bullet
   m_TagString: Untagged
@@ -189,18 +188,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
---- !u!114 &3324743930543556933
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6994964715812928696}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fcdff1fcc0013384c8ed7019895e93be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
-  effectsPrefab: {fileID: 0}
-  line: {fileID: 3768166515099121110}
