@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float runSpeed = 12f;
-    public float walkSpeed = 6f;
-    public float gravity = -15f;
+    public float runSpeed = 15f;
+    public float walkSpeed = 10f;
+    public float gravity = -20f;
     public float jumpHeight = 6f;
     public LayerMask groundLayer;
     public float groundRayDistance = 1.1f;
