@@ -13,8 +13,6 @@ GameObject:
   - component: {fileID: 8124384284769806545}
   - component: {fileID: 7130000039357444538}
   - component: {fileID: 390104393}
-  - component: {fileID: 4754894685845943841}
-  - component: {fileID: 2158792457692720375}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -61,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a827354d012930f4ea69b02862c6fe92, type: 2}
+  - {fileID: 2100000, guid: 8acee62322dad87448c71ef04e1ba32a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -117,32 +115,3 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &4754894685845943841
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 345739867850044861}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1517d2eda5546e24b814510ea2e673b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxVelocity: 5
-  maxDistance: 5
---- !u!114 &2158792457692720375
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 345739867850044861}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f912a924ea8b64946872d559b3ccba2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weighting: 7.5
-  target: {fileID: 0}
-  stoppingDistance: 0

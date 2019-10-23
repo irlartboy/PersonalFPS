@@ -28,7 +28,7 @@ public class Bullet : MonoBehaviour
     void OnCollisionEnter(Collision col)
     {
         // Get Contact point from colllisoin
-        ContactPoint contact = col.contacts[0];
+      //  ContactPoint contact = col.contacts[0];
         // Spawn the effect eg. bullet hole, sparks
         //Instantiate(effectsPrefab, contact.point, Quaternion.LookRotation(contact.normal));
         // Destry bullet
