@@ -12,7 +12,7 @@ public class InGameMenuManager : MonoBehaviour
 
 
 
-    public void PauseGame()
+    public void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -25,6 +25,10 @@ public class InGameMenuManager : MonoBehaviour
             {
                 UnPause();
             }
+        }
+        if (PlayerStats.curHealth == 0)
+        {
+            gameOverPanel.SetActive(true);
         }
     }
     public void Pause()
