@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 1541633636040256787}
   - component: {fileID: 8124384284769806545}
   - component: {fileID: 7130000039357444538}
+  - component: {fileID: 4441178867480217642}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -58,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a827354d012930f4ea69b02862c6fe92, type: 2}
+  - {fileID: 2100000, guid: 8acee62322dad87448c71ef04e1ba32a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -92,3 +93,16 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4441178867480217642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345739867850044861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43ecac1cef786ec43b6535d7e91eda9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
