@@ -10,9 +10,13 @@ public class Enemy : MonoBehaviour
     public Transform target;
     private NavMeshAgent agent;
 
+    public static int damage;
+    public static int health;
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        health = 100;
     }
 
     void Update()

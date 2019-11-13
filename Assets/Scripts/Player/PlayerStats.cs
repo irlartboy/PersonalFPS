@@ -12,6 +12,8 @@ public class PlayerStats : MonoBehaviour
 
     public GameObject hurtPanel;
 
+    private int heal = 25; 
+
     void Start()
     {
         maxHealth = 100;
@@ -32,15 +34,42 @@ public class PlayerStats : MonoBehaviour
         }
     }
 
-   /* public void ManageHealthBar()
+    public void Heal()
     {
-        if (curHealth <= 0 && healthFill.enabled)
+        curHealth += heal;
+    }
+    public void DestroyItem(GameObject item)
+    {
+        Destroy(item);    
+    }
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "HealthItem" && curHealth <= 100)
         {
-            healthFill.enabled = false;
+            Heal();
+            DestroyItem(other.gameObject);
         }
-        else if (!healthFill.enabled && curHealth > 0)
+    }
+
+    public void PlayerTakeDamage(int damage)
+    {
+        curHealth -= damage;
+        if (curHealth <= 0)
         {
-            healthFill.enabled = enabled;
+            
         }
-    }*/
+    }
+
+
+    /* public void ManageHealthBar()
+     {
+         if (curHealth <= 0 && healthFill.enabled)
+         {
+             healthFill.enabled = false;
+         }
+         else if (!healthFill.enabled && curHealth > 0)
+         {
+             healthFill.enabled = enabled;
+         }
+     }*/
 }

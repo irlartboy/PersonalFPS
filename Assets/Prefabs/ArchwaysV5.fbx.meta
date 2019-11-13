@@ -26,6 +26,10 @@ ModelImporter:
     4300002: Archway_v3_pCube1
     4300004: Archway_v1_pCube1
     4300006: Archway_v2_pCube1
+    6400000: Archway_v1_pCube1
+    6400002: Archway_v2_pCube1
+    6400004: Archway_v3_pCube1
+    6400006: pCube1
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -59,7 +63,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 175
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1

@@ -26,9 +26,16 @@ public class InGameMenuManager : MonoBehaviour
                 UnPause();
             }
         }
-        if (PlayerStats.curHealth == 0)
+        if (PlayerStats.curHealth <= 0)
         {
+            Time.timeScale = 0;
             gameOverPanel.SetActive(true);
+        }
+        if (Time.timeScale == 0)
+        {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+
         }
     }
     public void Pause()
@@ -41,5 +48,22 @@ public class InGameMenuManager : MonoBehaviour
     {
         Time.timeScale = 1;
         pausePanel.SetActive(false);
+    }
+
+    public void ResumeButton()
+    {
+        Time.timeScale = 1;
+        pausePanel.SetActive(false);
+    }
+    public void MainMenuButton()
+    {
+        SceneManager.LoadScene(sceneBuildIndex: 0);
+    }
+    public void ExitButton()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
+        Application.Quit();
     }
 }

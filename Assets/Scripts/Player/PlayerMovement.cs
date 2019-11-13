@@ -36,12 +36,14 @@ public class PlayerMovement : MonoBehaviour
         Move(normalized.x, normalized.z);
 
         // if grounded and pressed jump
-        if (IsGrounded() && inputJump)
+       // if (IsGrounded() && inputJump)
+       if(controller.isGrounded && inputJump)
         {
            Jump(jumpHeight);
         }
         // if is grounded and not jumping 
-        if (IsGrounded() && !isJumping)
+        // if (IsGrounded() && !isJumping)
+        if (controller.isGrounded && !isJumping) // - CharController has an in built isgrounded   
         {
             motion.y = 0f;
         }
