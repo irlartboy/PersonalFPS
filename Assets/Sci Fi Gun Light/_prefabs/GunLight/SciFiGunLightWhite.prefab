@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3336366}
   - component: {fileID: 2325452}
   - component: {fileID: 5470344961497776339}
+  - component: {fileID: 6805422537358075604}
   m_Layer: 0
   m_Name: SciFiGunLightWhite
   m_TagString: Untagged
@@ -92,3 +93,25 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300002, guid: 584761fab006d6d42b4d0d8c56a51241, type: 3}
+--- !u!114 &6805422537358075604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 131900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8889cf48588cf84a8549be66a34925c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  maxReserve: 500
+  maxClip: 30
+  spread: 2
+  recoil: 1
+  range: 10
+  shootRate: 0.2
+  shotOrigin: {fileID: 0}
+  bulletPrefab: {fileID: 0}
+  canShoot: 0
